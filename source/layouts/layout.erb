@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    
+    <title><%= current_page.data.title || "Cinis Recycling" %></title>
+    
+    <link href="http://fonts.googleapis.com/css?family=Titillium+Web:400,300,200,400italic,700" rel="stylesheet" type="text/css">
+    <%= stylesheet_link_tag "cinis" %>
+  </head>
+  
+  <body class="<%= page_classes %>">
+    <div class="main">
+      <header class="cinis-header">
+        <div class="row">
+          <div class="large-6 columns cinis-logo">
+            <% unless current_page.data.language == 'english' %>
+              <a href="/">Cinis Recycling</a>
+            <% else %>
+              <a href="/english">Cinis Recycling</a>
+            <% end %>
+          </div>
+          <nav class="large-6 columns cinis-navigation">
+            <ul>
+              <% if current_page.data.language == 'english' %>
+                <li><%= current_link_to 'News', 'http://news.cinis.dk' %>
+                <li><%= current_link_to 'Contact us', '/english/contact-us'  %>
+                <li><%= current_link_to 'Dansk', '/' %>
+              <% else %>
+                <li><%= current_link_to 'Nyheder', 'http://nyheder.cinis.dk' %>
+                <li><%= current_link_to 'Kontakt os', '/kontakt-os'  %>
+                <li><%= current_link_to 'English', '/english' %>
+              <% end %>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="content">
+        <%= yield %>
+      </div>
+    </div>
+
+    <footer>
+      <div class="cinis-info">
+        <div class="row" itemscope itemtype="http://schema.org/Organization">
+          <div class="large-8 large-centered columns info-table">
+            <span class="name" itemprop="name">Cinis Recycling</span>
+            <span class="adr" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+              <span class="email" itemprop="email"><a href="mailto:cinis@cinis.dk">cinis@cinis.dk</a></span>
+              <span class="street-address" itemprop="streetAddress">Industrivej 9</span>
+              <span class="postal-code"><span itemprop="postalCode">9510</span> <span itemprop="addressLocality">Arden</span></span>
+              <span class="tel" itemprop="telephone"><small>TLF.</small> <a href="tel:+4550418037">5041 8037</a> / <a href="tel:+4540847840">4084 7840</a></span>
+              <span class="cvr"><small>CVR.</small> <span>3336 0827</span></span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <%= javascript_include_tag  "cinis" %>
+  </body>
+</html>

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import "normalize"; 
+@import "normalize";
 @import "jquery.fancybox";
 @import "tipr";
 @import "vendor/foundation/scss/foundation/variables";
@@ -33,7 +33,7 @@ body {
   background: $white;
 }
 
-.index .main, 
+.index .main,
 .english_index .main {
   color: $white;
   background: url(/images/background.jpg) 50% 0 no-repeat $darkGrey;
@@ -120,6 +120,14 @@ p {
   }
 }
 
+.index .introducing-cinis h1 {
+  margin: 0 0 40px 0;
+}
+.index .actions {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
 .actions {
   text-align: center;
   margin-top: 80px;
@@ -131,7 +139,7 @@ p {
 
 .btn {
   display: inline-block;
-  padding: 10px 38px;
+  padding: 18px 38px;
   background: #fff;
   color: #000;
   text-decoration: none;
@@ -187,7 +195,7 @@ p {
   background: $white;
   color: $darkGrey;
   .illustrations-row {
-    
+
   }
   .illustration {
     height: 220px;
@@ -249,7 +257,7 @@ footer {
   .info-table {
     position: relative;
   }
-  
+
   .name {
     background: url(/images/cinis-logo.png) 50% 50% no-repeat;
     display: inline-block;
@@ -264,7 +272,7 @@ footer {
     position: absolute;
     bottom: 5px;
     margin-left: 20px;
-    
+
     a {
       border-bottom: 1px dotted $white;
 
@@ -289,7 +297,7 @@ footer {
     border: 1px solid #ccc;
     display: inline-block;
     padding: 4px;
-    
+
     &:hover {
       border-color: $logoGreen;
     }

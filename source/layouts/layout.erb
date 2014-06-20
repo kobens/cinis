@@ -26,11 +26,9 @@
           <nav class="large-6 columns cinis-navigation">
             <ul>
               <% if current_page.data.language == 'english' %>
-                <li><%= current_link_to 'News', 'http://news.cinis.dk' %>
                 <li><%= current_link_to 'Contact us', '/english/contact-us'  %>
                 <li><%= current_link_to 'Dansk', '/' %>
               <% else %>
-                <li><%= current_link_to 'Nyheder', 'http://nyheder.cinis.dk' %>
                 <li><%= current_link_to 'Kontakt os', '/kontakt-os'  %>
                 <li><%= current_link_to 'English', '/english' %>
               <% end %>

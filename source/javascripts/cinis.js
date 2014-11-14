@@ -2,9 +2,14 @@
 
 $(function() {
   $('.tip').tipr({
-    speed: 100,
+    speed: 400,
     mode: 'top'
   });
-  
+
   $('.gallery a').fancybox();
+
+  $('body').plusAnchor({
+    easing: 'easeInOutExpo',
+    speed:  300
+  });
 });

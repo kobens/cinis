@@ -15,7 +15,6 @@ $blue: #4abecc;
 $darkGrey: #222;
 $darkBlue: #31353a;
 
-
 html, body { height: 100%; }
 
 .row { max-width: 75em; }
@@ -24,6 +23,14 @@ body {
   font-family: 'Titillium Web', sans-serif;
   font-weight: 200;
   z-index: 0;
+}
+
+h1, h3, h4 {
+  font-weight: normal;
+}
+
+strong {
+  font-weight: 400;
 }
 
 .main {
@@ -51,7 +58,8 @@ p {
 }
 
 .kontakt-os .cinis-header,
-.english_contact-us .cinis-header {
+.english_contact-us .cinis-header,
+.salg-af-kaliumgoedning .cinis-header {
   background: url(/images/header-background.jpg) 50% 50% no-repeat $darkGrey;
   background-size: cover;
   color: $white;
@@ -302,4 +310,25 @@ footer {
       border-color: $logoGreen;
     }
   }
+}
+
+.manure-specs {
+  width: 100%;
+  font-size: 18px;
+  td {
+
+  }
+  tbody td {
+    padding: 3px 20px 3px 0;
+  }
+  tbody td:first-child {
+    font-weight: 400;
+    text-align: right;
+  }
+  tfoot td {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 14px;
+  }
+  margin-bottom: 60px;
 }

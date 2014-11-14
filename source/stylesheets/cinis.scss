@@ -313,13 +313,12 @@ footer {
 }
 
 .manure-specs {
-  width: 100%;
+  width: 50%;
   font-size: 18px;
-  td {
-
-  }
+  margin: 0 auto;
   tbody td {
-    padding: 3px 20px 3px 0;
+    padding: 5px 15px;
+    border: 1px solid #999;
   }
   tbody td:first-child {
     font-weight: 400;
